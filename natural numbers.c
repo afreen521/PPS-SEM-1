@@ -1,16 +1,13 @@
-#includeL<stdio.h>
-intsum(int n)
-{
-if(n==0)
-return 0;
-return n+sum(n-1);
-}
-int main()
-{
-intn,result;
-printf("enter a number:");
-scanf("%d,&n");
-result=sum(n);
-printf("sumof first%dnatural numbers is %d",n,result);
-return 0;
-}
+#include <stdio.h>
+ int main()
+ {
+ int n, i;
+ printf("Enter the value of n: ");
+  scanf("%d", &n);
+   printf("First %d natural numbers are:\n", n);
+    for (i = 1; i <= n; i++)
+     {
+ printf("%d ", i);
+  }
+  return 0;
+  }
